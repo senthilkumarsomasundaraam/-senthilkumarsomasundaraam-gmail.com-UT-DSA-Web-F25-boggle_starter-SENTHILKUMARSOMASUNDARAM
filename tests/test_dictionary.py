@@ -8,11 +8,11 @@ from py_boggle import trie_dictionary
 
 
 # read words file
-import os
+#import os
 #  path relative to this test file
-BASE_DIR = os.path.dirname(__file__)
-WORDS_FILE = os.path.join(BASE_DIR, "..", "words.txt")  # full file path with file name
-#WORDS_FILE = "words.txt"
+# BASE_DIR = os.path.dirname(__file__)
+# WORDS_FILE = os.path.join(BASE_DIR, "..", "words.txt")  # full file path with file name
+WORDS_FILE = "words.txt"
 words: Set[str] = set()
 with open(WORDS_FILE, "r") as fin:
     for line in fin:

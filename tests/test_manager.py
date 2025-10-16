@@ -9,14 +9,14 @@ from py_boggle.trie_dictionary import TrieDictionary
 from py_boggle.boggle_game import BoggleGame
 from py_boggle.my_game_manager import MyGameManager
 
-import os
+#import os
 #  path relative to this test file
-BASE_DIR = os.path.dirname(__file__)
-CUBE_FILE = os.path.join(BASE_DIR, "..", "cubes.txt")  # full file path with file name
-WORDS_FILE = os.path.join(BASE_DIR, "..", "words.txt")  # full file path with file name
+#BASE_DIR = os.path.dirname(__file__)
+#CUBE_FILE = os.path.join(BASE_DIR, "..", "cubes.txt")  # full file path with file name
+#WORDS_FILE = os.path.join(BASE_DIR, "..", "words.txt")  # full file path with file name
 # read words file
-#CUBE_FILE = "cubes.txt"
-#WORDS_FILE = "words.txt"
+CUBE_FILE = "cubes.txt"
+WORDS_FILE = "words.txt"
 words: Set[str] = set()
 with open(WORDS_FILE, "r") as fin:
     for line in fin:
